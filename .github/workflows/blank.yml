@@ -1,0 +1,18 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Greetings from Maanav
+on: push
+
+jobs:
+  my-job: 
+  name: My Job
+  runs-on: ubuntu-latest
+  steps:
+  - name: Print a greeting
+    env:
+      MY_VAR: Hi there! My name is
+      FIRST_NAME: Maanav
+      MIDDLE_NAME: Vijay
+      LAST_NAME: Wadhwa
+    run:
+      echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
